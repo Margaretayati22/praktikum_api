@@ -10,6 +10,9 @@ app.get('/', (req, res) => res.send('API aktif!'));
 
 // tambahkan routing kamu dibawah sini
 
+const productRoutes = require('./routes/product.route');
+
+app.use('/api/products', productRoutes);
 
 // Koneksi ke database
 sequelize.authenticate()
