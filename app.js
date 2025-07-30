@@ -14,6 +14,9 @@ const userRoutes = require('./routes/user.route');
 app.use('/api/users', userRoutes);
 
 
+const productRoutes = require('./routes/product.route');
+
+app.use('/api/products', productRoutes);
 
 // Koneksi ke database
 sequelize.authenticate()
